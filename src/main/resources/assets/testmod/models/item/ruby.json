@@ -1,5 +1,5 @@
 {
-  "parent": "item/generates",
+  "parent": "item/generated",
   "textures": {
     "layer0": "testmod:item/ruby"
   }
