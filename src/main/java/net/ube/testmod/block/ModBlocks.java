@@ -32,7 +32,7 @@ public class ModBlocks {
 
     public static void registerModBlocks(){
 
-
+        TestMod.LOGGER.info("Registrando bloques" + TestMod.MOD_ID);
 
     }
 

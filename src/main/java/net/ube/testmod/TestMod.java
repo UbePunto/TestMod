@@ -2,6 +2,7 @@ package net.ube.testmod;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.ube.testmod.block.ModBlocks;
 import net.ube.testmod.item.ModItemGroups;
 import net.ube.testmod.item.ModItems;
 import org.slf4j.Logger;
@@ -14,6 +15,7 @@ public class TestMod implements ModInitializer {
 	@Override
 	public void onInitialize() {
 
+		ModBlocks.registerModBlocks();
 		ModItems.registerModItems();
 		ModItemGroups.registerItemGroups();
 	}
