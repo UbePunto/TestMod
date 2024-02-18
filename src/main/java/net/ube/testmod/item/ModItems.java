@@ -4,10 +4,7 @@ import joptsimple.internal.Rows;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemConvertible;
-import net.minecraft.item.ItemGroups;
-import net.minecraft.item.SwordItem;
+import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
@@ -22,12 +19,15 @@ public class ModItems {
             new Item(new FabricItemSettings().maxCount(1)));
     public static final Item SWORD3 = registerItem("sword3",
             new SwordItem(ModToolMaterial.SWORD3, 50, 20f, new FabricItemSettings()));
+    public static final Item SHIELD = registerItem("shield",
+            new ShieldItem(new FabricItemSettings().maxCount(1)));
 
     private static void addItemToIngredientTabItemGroup(FabricItemGroupEntries entries){
         entries.add(RUBY);
         entries.add(RAW_RUBY);
         entries.add(SWORD3);
         entries.add(RUBY_STAFF);
+        entries.add(SHIELD);
     }
     private static Item registerItem(String name, Item item){
         return Registry.register(Registries.ITEM, new Identifier(TestMod.MOD_ID,name), item);

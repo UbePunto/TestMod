@@ -18,6 +18,7 @@ public class ModItemsGroups {
                         entries.add(ModItems.RAW_RUBY);
                         entries.add(ModItems.RUBY_STAFF);
                         entries.add(ModItems.SWORD3);
+                        entries.add(ModItems.SHIELD);
 
                     }).build());
 

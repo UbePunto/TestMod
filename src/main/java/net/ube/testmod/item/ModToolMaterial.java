@@ -1,5 +1,6 @@
 package net.ube.testmod.item;
 
+import net.minecraft.item.Item;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
 
@@ -7,7 +8,9 @@ import java.util.function.Supplier;
 
 public enum ModToolMaterial implements ToolMaterial {
     SWORD3(5, 650, 4.5f, 53.5f, 26,
-            () -> Ingredient.ofItems(ModItems.SWORD3));
+            () -> Ingredient.ofItems(ModItems.SWORD3)),
+    SHIELD(5, 650, 4.5f, 53.5f, 26,
+            () -> Ingredient.ofItems(ModItems.SHIELD));
 
     private final int miningLevel;
     private final int itemDurability;
@@ -54,4 +57,8 @@ public enum ModToolMaterial implements ToolMaterial {
     public Ingredient getRepairIngredient() {
         return this.repairIngredient.get();
     }
+
+
+
+
 }

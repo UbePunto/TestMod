@@ -26,4 +26,5 @@ public abstract class ModelLoaderMixin {
     public void addRubyStaff(BlockColors blockColors, Profiler profiler, Map<Identifier, JsonUnbakedModel> jsonUnbakedModels, Map<Identifier, List<ModelLoader.SourceTrackedData>> blockStates, CallbackInfo ci) {
         this.addModel(new ModelIdentifier(TestMod.MOD_ID, "sword3", "inventory"));
     }
+
 }
