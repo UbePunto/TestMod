@@ -16,17 +16,19 @@ public class ModItemsGroups {
                     .icon(() -> new ItemStack(ModItems.RUBY)).entries((displayContext, entries) -> {
                         entries.add(ModItems.RUBY);
                         entries.add(ModItems.RAW_RUBY);
+                        entries.add(ModItems.RUBY_STAFF);
+                        entries.add(ModItems.SWORD3);
 
                     }).build());
 
     public static void registerItemGroups(){
         TestMod.LOGGER.info("Registering Item Groups for " +TestMod.MOD_ID);
     }
-    public static final ItemGroup SWORD2_GROUP = Registry.register(Registries.ITEM_GROUP,
-            new Identifier(TestMod.MOD_ID, "sword2"),
+    public static final ItemGroup SWORD3_GROUP = Registry.register(Registries.ITEM_GROUP,
+            new Identifier(TestMod.MOD_ID, "sword3"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.ruby"))
                     .icon(() -> new ItemStack(ModItems.RUBY)).entries((displayContext, entries) -> {
-                        entries.add(ModItems.SWORD2);
+                        entries.add(ModItems.SWORD3);
 
                     }).build());
 
