@@ -22,9 +22,12 @@ public class ModItemsGroups {
     public static void registerItemGroups(){
         TestMod.LOGGER.info("Registering Item Groups for " +TestMod.MOD_ID);
     }
+    public static final ItemGroup SWORD2_GROUP = Registry.register(Registries.ITEM_GROUP,
+            new Identifier(TestMod.MOD_ID, "sword2"),
+            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.ruby"))
+                    .icon(() -> new ItemStack(ModItems.RUBY)).entries((displayContext, entries) -> {
+                        entries.add(ModItems.SWORD2);
 
-    public static void registerItemGroups2() {
+                    }).build());
+
     }
-}
-
-

@@ -2,9 +2,8 @@
   "item.testmod.ruby": "Ruby",
   "item.testmod.raw_ruby": "Raw Ruby",
 
-  "itemgroup.ruby": "Ruby Group"
-}
-{
+  "itemgroup.ruby": "Ruby Group",
+
   "item.testmod.sword2": "sword2",
   "item.testmod.raw_sword2": "Raw sword2",
 
