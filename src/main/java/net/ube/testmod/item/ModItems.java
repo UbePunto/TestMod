@@ -28,4 +28,22 @@ public class ModItems {
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(ModItems::addItemToIngredientTabItemGroup);
     }
+
+    public static final Item SWORD2 = registerItem("sword2",new Item(new FabricItemSettings()));
+    public static final Item RAW_SWORD2 = registerItem("raw_sword2",new Item(new FabricItemSettings()));
+
+    private static void addItemToIngredientTabItemGroup2(FabricItemGroupEntries entries){
+        entries.add(SWORD2);
+        entries.add(RAW_SWORD2);
+    }
+    private static Item registerItem2(String name, Item item){
+        return Registry.register(Registries.ITEM, new Identifier(TestMod.MOD_ID,name), item);
+    }
+
+    public static void registerModItems2(){
+        TestMod.LOGGER.info("Registering Mod Items for "+ TestMod.MOD_ID);
+
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(ModItems::addItemToIngredientTabItemGroup);
+    }
+
 }

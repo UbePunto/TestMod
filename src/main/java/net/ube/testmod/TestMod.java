@@ -13,7 +13,7 @@ public class TestMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		ModItemsGroups.registerItemGroups();
+		ModItemsGroups.registerItemGroups2();
 		ModItems.registerModItems();
 	}
 }

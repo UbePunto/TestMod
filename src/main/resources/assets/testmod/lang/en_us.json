@@ -4,3 +4,9 @@
 
   "itemgroup.ruby": "Ruby Group"
 }
+{
+  "item.testmod.sword2": "sword2",
+  "item.testmod.raw_sword2": "Raw sword2",
+
+  "itemgroup.sword2": "sword2 Group"
+}

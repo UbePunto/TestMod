@@ -22,4 +22,9 @@ public class ModItemsGroups {
     public static void registerItemGroups(){
         TestMod.LOGGER.info("Registering Item Groups for " +TestMod.MOD_ID);
     }
+
+    public static void registerItemGroups2() {
+    }
 }
+
+
