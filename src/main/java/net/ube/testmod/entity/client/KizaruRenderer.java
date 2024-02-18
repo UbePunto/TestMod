@@ -4,26 +4,25 @@ import net.minecraft.client.render.VertexConsumerProvider;
 import net.minecraft.client.render.entity.EntityRendererFactory;
 import net.minecraft.client.render.entity.MobEntityRenderer;
 import net.minecraft.client.util.math.MatrixStack;
-import net.minecraft.item.ItemStack;
 import net.minecraft.util.Identifier;
 import net.ube.testmod.TestMod;
-import net.ube.testmod.entity.custom.PorcupineEntity;
+import net.ube.testmod.entity.custom.KizaruEntity;
 
-public class PorcupineRenderer extends MobEntityRenderer<PorcupineEntity, porcupine<PorcupineEntity>> {
+public class KizaruRenderer extends MobEntityRenderer<KizaruEntity, kiza<KizaruEntity>> {
 
-    private static final Identifier TEXTURE = new Identifier(TestMod.MOD_ID,"textures/entity/porcupine.png");
+    private static final Identifier TEXTURE = new Identifier(TestMod.MOD_ID,"textures/entity/kizarupru.png");
 
-    public PorcupineRenderer(EntityRendererFactory.Context context) {
-        super(context,new porcupine<>(context.getPart(ModModelLayers.PORCUPINE)),0.6f);
+    public KizaruRenderer(EntityRendererFactory.Context context) {
+        super(context,new kiza<>(context.getPart(ModModelLayers.KIZA)),0.6f);
     }
 
     @Override
-    public Identifier getTexture(PorcupineEntity entity) {
+    public Identifier getTexture(KizaruEntity entity) {
         return TEXTURE;
     }
 
     @Override
-    public void render(PorcupineEntity mobEntity, float f, float g, MatrixStack matrixStack,
+    public void render(KizaruEntity mobEntity, float f, float g, MatrixStack matrixStack,
                        VertexConsumerProvider vertexConsumerProvider, int i) {
 
         if (mobEntity.isBaby()){

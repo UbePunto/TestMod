@@ -16,7 +16,9 @@ public class porcupine<T extends PorcupineEntity> extends SinglePartEntityModel<
 	private final ModelPart head;
 	public porcupine(ModelPart root) {
 		this.cuerpo = root.getChild("cuerpo");
-		this.head = cuerpo.getChild("head").getChild();
+		this.head = cuerpo.getChild("cabeza");
+
+
 	}
 	public static TexturedModelData getTexturedModelData() {
 		ModelData modelData = new ModelData();
